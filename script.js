@@ -12,7 +12,7 @@ const form = document.getElementById("carForm");
 const carList = document.getElementById("carList");
 let cars = [];
 
-// Add car
+
 form.addEventListener("submit", function(event) {
     // preventDefault stops the page from reloading on form submission
     event.preventDefault();
