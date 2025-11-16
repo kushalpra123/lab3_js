@@ -1,30 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>Toy Car Builder</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <h1>Toy Car Builder</h1>
 
     <form id="carForm">
-        <input type="text" id="name" placeholder="Car Name" required>
-        <input type="text" id="brand" placeholder="Brand">
-        <input type="text" id="color" placeholder="Color">
-        <input type="number" id="year" placeholder="Year">
-        <input type="number" id="price" placeholder="Price">
-        <input type="text" id="material" placeholder="Material">
-        <input type="text" id="features" placeholder="Features ">
-        <input type="text" id="image" placeholder="Image URL">
+        <!-- user must atleast provide a name for the car -->
+      <input type="text" class="box" id="name" placeholder="Car Name" required />
+      <input type="text"  class="box" id="brand" placeholder="Brand" />
+      <input type="text" class="box" id="color" placeholder="Color" />
+      <input type="number" class="box" id="year" placeholder="Year" />
+      <input type="number" class="box" id="price" placeholder="Price" />
+      <input type="text" class="box" id="material" placeholder="Material" />
+      <input type="text" class="box" id="features" placeholder="Features " />
+      <input type="text" class="box" id="image" placeholder="Image URL" />
 
-        <button type="submit">Add Car</button>
+      <button type="submit" class="box">Add Car</button>
     </form>
 
     <h2>Your Car</h2>
     <div id="carList"></div>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
