@@ -8,3 +8,10 @@ function ToyCar(name, brand, color, year, price, material, features, imageURL) {
     this.features = features;
     this.imageURL = imageURL;
 }
+const form = document.getElementById("carForm");
+const carList = document.getElementById("carList");
+let cars = [];
+
+// Add car
+form.addEventListener("submit", function(event) {
+    event.preventDefault();
