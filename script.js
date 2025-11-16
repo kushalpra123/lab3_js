@@ -14,4 +14,19 @@ let cars = [];
 
 // Add car
 form.addEventListener("submit", function(event) {
+    // preventDefault stops the page from reloading on form submission
     event.preventDefault();
+    const car = new ToyCar(
+        document.getElementById("name").value,
+        document.getElementById("brand").value,
+        document.getElementById("color").value,
+        document.getElementById("year").value,
+        document.getElementById("price").value,
+        document.getElementById("material").value,
+        document.getElementById("features").value.split(","),
+        document.getElementById("image").value
+    );
+        cars.push(car);
+    displayCars();
+    form.reset();
+});
